@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheese Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/cheese.png" type="image/x-icon">
+</head>
+<body>
+    <main class="container">
+        <!-- Element to display the score -->
+        <div id="score" class="score"><span>0</span> cheeses</div>
+
+        <!-- Container for the cheese image -->
+        <div class="cheese-container">
+            <img id="cheese" class="cheese" src="img/cheese.png" alt="Cheese">
+        </div>
+
+        <!-- Container for auto-click powerups -->
+        <div class="auto-clicks disable">
+            <h2>Auto Clicks</h2>
+            <div class="cursors"></div>
+        </div>
+
+        <!-- Container for powerups -->
+        <div class="powerups">
+            <!-- Auto Click powerup -->
+            <div class="powerup" id="auto-click" data-price="40">
+                <img src="img/cursor.png" alt="cursor" id="cursor" class="cursor auto-click">
+                <p class="name">Auto Click</p>
+                <p class="price"><span>40</span> cheeses</p>
+            </div>
+
+            <!-- Upgrade Click powerup -->
+            <div id="upgrade-click" class="powerup" data-price="100">
+                <img src="img/cursor.png" alt="cursor" id="cursor" class="cursor">
+                <p class="name">x2 Click</p>
+                <p class="price"><span>100</span> cheeses</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Container for cheese click particles -->
+    <div class="cheese-clicks"></div>
+
+    <!-- JavaScript file -->
+    <script src="index.js"></script>
+</body>
+
+</html>
